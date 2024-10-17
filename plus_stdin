@@ -2,11 +2,14 @@
 
 import sys
 
+
 def tonum(num):
     try:
         return int(l)
     except:
         return float(l)
+
+
 ans = 0.0
 for l in sys.stdin:
     ans += tonum(l)
