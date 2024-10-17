@@ -4,6 +4,7 @@ import sys
 
 ans = 0.0
 for l in sys.stdin:
+    l = l.rstrip()
     try:
         ans += int(l)
     except:
