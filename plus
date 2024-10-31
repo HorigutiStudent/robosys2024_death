@@ -1,0 +1,18 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2024 Horiguti 
+# SPDX-License-Identifier: BSD-3-Clause
+import sys
+
+
+def tonum(num):
+    try:
+        return int(l)
+    except:
+        return float(l)
+
+
+ans = 0
+for l in sys.stdin:
+    ans += tonum(l)
+
+print(ans)
