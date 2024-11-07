@@ -1,7 +1,7 @@
 # robosys2024
 
 # plus コマンド
-![test](https://github.com/HorigutiStudent/robosys2024/actions/workflows.yml/badge.svg)
+![test](https://github.com/HorigutiStudent/robosys2024/actions/workflows/test.yml.svg)
 
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 - このパッケージは，由来のコード（© 2022 ）を利用しています．
