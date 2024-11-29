@@ -10,7 +10,6 @@ if __name__ == "__main__":
     
     month = getdatetime.get_month()
     week = getdatetime.get_week()
-    
     place = getplaceinfo.done()
     
     #print(month,week)
@@ -18,7 +17,10 @@ if __name__ == "__main__":
     file_name = "pictures/menue.jpg"
 
     response = requests.get(url)
-    image = response.content
-    
-    with open(file_name,"wb") as p:
-        p.write(image)
+    if response.status_code == 200:#正しく画像を取得しているかを確認
+        image = response.content
+        with open(file_name,"wb") as p:
+            p.write(image)
+            print(0)#疑似終了ステータス
+    else:
+        print(1)#正しく画像が取得できないときは1を返すようにする
