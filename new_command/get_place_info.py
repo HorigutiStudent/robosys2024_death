@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# Copyright (c) 2020 yamory yamada
+# Copyright (c) 2024 Horiguchi Masahumi
 # Released under the MIT license
 # https://opensource.org/licenses/mit-license.php
 
