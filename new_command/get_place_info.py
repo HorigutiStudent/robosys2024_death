@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+# Copyright (c) 2020 yamory yamada
+# Released under the MIT license
+# https://opensource.org/licenses/mit-license.php
+
 import sys
 sys.path.append("/home/RoboSys/robosys2024")
 
