@@ -1,12 +1,14 @@
 #!/usr/bin/python3
 
 import requests
-from get_datetime import GetDateTime
-from get_place_info import GetPlaceInfo
+from new_command.get_datetime import GetDateTime
+from new_command.get_place_info import GetPlaceInfo
+from new_command.view_picture import ViewPicture
 
 if __name__ == "__main__":
     getdatetime = GetDateTime()
     getplaceinfo = GetPlaceInfo()
+    view_picture = ViewPicture()
     
     month = getdatetime.get_month()
     week = getdatetime.get_week()
@@ -21,6 +23,7 @@ if __name__ == "__main__":
         image = response.content
         with open(file_name,"wb") as p:
             p.write(image)
+            view_picture.done()
             print(0)#疑似終了ステータス
     else:
         print(1)#正しく画像が取得できないときは1を返すようにする

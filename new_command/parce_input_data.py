@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 import sys
 
 class ParceInputData:
@@ -6,7 +7,7 @@ class ParceInputData:
         self.input_data = ""
   
     def get_data(self) -> str:
-        self.input_data = sys.stdin.read()
+        self.input_data = sys.stdin.read().strip()
         return self.input_data
   
     def to_num(self,type:str="int") -> list:

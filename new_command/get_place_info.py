@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+
 import sys
-from parce_input_data import ParceInputData
+sys.path.append("/home/RoboSys/robosys2024")
+
+from new_command.parce_input_data import ParceInputData
 import re
 
 
@@ -15,7 +18,6 @@ class GetPlaceInfo:
     
     
     def __get_place(self,input_data:str) -> str:
-        print(input_data)
         if input_data[0] == "t":#入力の頭文字が津田沼のtなら
             return "td"
         elif input_data[0] == "s":#入力の頭文字が新習志野のsなら
