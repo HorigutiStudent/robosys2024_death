@@ -16,6 +16,6 @@ jobs:
       run: |
         sudo apt  update
         sudo apt install -y python3-tk
-        pip install -r requirements.txt
+        pip install -r Pillow
     - name: All test
       run: bash -xv ./test_new_command
