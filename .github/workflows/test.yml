@@ -20,8 +20,8 @@ jobs:
         pip3 install Pillow==9.0.1
     - name: Pillow test
       run: |
-        pip list
-        which python
-        which pip
+        pip3 list
+        which python3
+        which pip3
     - name: All test
       run: bash -xv ./test_new_command
