@@ -4,6 +4,8 @@
 # Released under the MIT license
 # https://opensource.org/licenses/mit-license.php
 
+import os
+print(os.path())
 import tkinter as tk
 from PIL import Image, ImageTk
 
