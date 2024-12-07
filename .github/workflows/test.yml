@@ -20,7 +20,7 @@ jobs:
     - name: Pillow test
       run: |
         pip list
-        witch python
-        witch pip
+        which python
+        which pip
     - name: All test
       run: bash -xv ./test_new_command
