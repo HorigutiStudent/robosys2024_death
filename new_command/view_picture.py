@@ -16,7 +16,8 @@ class ViewPicture:
         picture_size:tuple=(500,707),
     ):
         self.picture_size = picture_size
-        self.image_path = "/home/RoboSys/robosys2024/pictures/menue.jpg"
+        #GithubActionsでは相対パスを使用する
+        self.image_path = "pictures/menue.jpg"
   
   
     def done(self) -> None:
