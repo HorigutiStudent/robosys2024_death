@@ -9,31 +9,31 @@ res=0
 
 #予定通りの入力で正しく動作するか確認する
 #新習志野1階メニュー
-out=$(echo s1 | ./get_menues)
+out=$(echo s1 | xvfb-run -a ./get_menues)
 [ "${out}" = 0 ] || ng "$LINENO" 
 #新習志野2階メニュー
-out=$(echo s2 | ./get_menues)
+out=$(echo s2 | xvfb-run -a ./get_menues)
 [ "${out}" = 0 ] || ng "$LINENO" 
 #津田沼1階メニュー
-out=$(echo t | ./get_menues)
+out=$(echo t | xvfb-run -a ./get_menues)
 [ "${out}" = 0 ] || ng "$LINENO" 
 
 
 ##想定外の入力でエラーを吐くか確認する
 # 全く想定していない入力
-out=$(echo aa | ./get_menues)
+out=$(echo aa | xvfb-run -a ./get_menues)
 [ "$?" = 1 ] || ng "$LINENO" 
 # スペルミス(1忘れ)
-out=$(echo s | ./get_menues)
+out=$(echo s | xvfb-run -a ./get_menues)
 [ "$?" = 1 ] || ng "$LINENO" 
 #入力された文字がないとき
-out=$(echo "" | ./get_menues)
+out=$(echo "" | xvfb-run -a ./get_menues)
 [ "$?" = 1 ] || ng "$LINENO"
 #全角文字が入力されたとき
-out=$(echo 新習志野１階 | ./get_menues)
+out=$(echo 新習志野１階 | xvfb-run -a ./get_menues)
 [ "$?" = 1 ] || ng "$LINENO"  
 #全角文字と半角文字が入力された場合
-out=$(echo 新習志野1階 | ./get_menues)
+out=$(echo 新習志野1階 | xvfb-run -a ./get_menues)
 [ "$?" = 1 ] || ng "$LINENO" 
 
 [ "$res" = 0 ] && echo 'OK'

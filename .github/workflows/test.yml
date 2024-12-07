@@ -16,6 +16,7 @@ jobs:
       run: |
         sudo apt  update
         sudo apt install -y python3-tk
+        sudo apt-get install -y xvfb
         sudo apt install python3-pil  python3-pil.imagetk
         
     - name: Pillow test
