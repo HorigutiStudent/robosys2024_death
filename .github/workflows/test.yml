@@ -17,5 +17,7 @@ jobs:
         sudo apt  update
         sudo apt install -y python3-tk
         pip install Pillow
+    - name: Pillow test
+      run: pip list
     - name: All test
       run: bash -xv ./test_new_command
