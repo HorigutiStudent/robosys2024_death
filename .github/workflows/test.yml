@@ -16,8 +16,8 @@ jobs:
       run: |
         sudo apt  update
         sudo apt install -y python3-tk
-        sudo apt install python3-pil
-        pip3 install Pillow==9.0.1
+        sudo apt install python3-pil python3-pil.image python3-pil.imagetk
+        
     - name: Pillow test
       run: |
         pip3 list
