@@ -10,7 +10,16 @@
 - Python 
     - version: 3.7 ~ 3.10
 ## Requirements
-
+- Pillow
+  apt でインストール(推奨)
+  ```sh
+  apt install python3-pil  python3-pil.imagetk
+  ```
+  pipでインストール(テスト済みでないため非推奨)
+  ```sh
+  pip3 install PIL
+  ```
+  
 ## LICENSE
 - このソフトウェアパッケージは，MITライセンスの下，再頒布および使用が許可されます．
 - このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです．
