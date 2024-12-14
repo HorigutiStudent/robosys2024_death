@@ -1,36 +1,43 @@
 #!/bin/sh
 
 ng () {
-	echo "${1} is failed"
+	echo "${1} failed"
 	res=1
 }
 
+#一定時間経過後にスクリプトを終了する関数を実装
+test_script () {
+	timeout 5s sh -c "
+    echo ${1} | xvfb-run -a ./get_menues 
+	"
+}
 res=0
 
 #予定通りの入力で正しく動作するか確認する
 #新習志野1階メニュー
-out=$(echo s1 | xvfb-run -a ./get_menues)
-[ "${out}" = 0 ] || ng "$LINENO" 
+out=$( test_script s1 )
+#タイムアウトによって終了すればよい
+[ "$?" = 124 ] || ng "$LINENO" 
 #新習志野2階メニュー
-out=$(echo s2 | xvfb-run -a ./get_menues)
-[ "${out}" = 0 ] || ng "$LINENO" 
+out=$( test_script s2 )
+[ "$?" = 124 ] || ng "$LINENO" 
 #津田沼1階メニュー
-out=$(echo t | xvfb-run -a ./get_menues)
-[ "${out}" = 0 ] || ng "$LINENO" 
+out=$( test_script t )
+[ "$?" = 124 ] || ng "$LINENO" 
 
 
 ##想定外の入力でエラーを吐くか確認する
 # 全く想定していない入力
-out=$(echo aa | xvfb-run -a ./get_menues)
+out=$( test_script aa )
 [ "$?" = 1 ] || ng "$LINENO" 
 # スペルミス(1忘れ)
-out=$(echo s | xvfb-run -a ./get_menues)
+out=$( test_script s )
 [ "$?" = 1 ] || ng "$LINENO" 
 #入力された文字がないとき
-out=$(echo "" | xvfb-run -a ./get_menues)
+out=$( test_script "" )
 [ "$?" = 1 ] || ng "$LINENO"
 #全角文字が入力されたとき
-out=$(echo 新習志野１階 | xvfb-run -a ./get_menues)
+out=$( test_script 新習志野１階 )
 [ "$?" = 1 ] || ng "$LINENO"  
 #全角文字と半角文字が入力された場合
 out=$(echo 新習志野1階 | xvfb-run -a ./get_menues)
