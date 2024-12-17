@@ -2,7 +2,7 @@
 
 # get_menue コマンド
 ![test](https://github.com/HorigutiStudent/robosys2024/actions/workflows/test.yml/badge.svg)
-!License: MIT
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
  今週の学食メニュー表を入手するコマンド.
 ## テスト済み環境
 ### Local
