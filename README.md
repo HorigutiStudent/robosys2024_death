@@ -29,6 +29,7 @@ apt install xvfb
 ## Usage
 コマンドは次のように使用する.
 ```
+cd 
 echo "場所" | ./get_menues
 ```
 場所には次の候補のうちいずれかを入力.
