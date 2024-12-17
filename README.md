@@ -27,7 +27,7 @@ apt installl python3-pil python3-pil.imagetk
 #pipでインストール(テスト済みでないため非推奨)
 pip install PIL
 ```
-テストを実行したい場合は加えてダウンロード
+テストを実行したい場合は加えてインストール
 ```sh
 apt install xvfb
 ```
