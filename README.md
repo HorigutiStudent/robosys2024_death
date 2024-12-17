@@ -5,6 +5,12 @@
 
  今週の学食メニュー表を入手するコマンド.
 ## テスト済み環境
+### Local
+- Linux OS
+ - Ubuntu 22.04
+- Python
+ - version:  3.10.12    
+### GitHubActions
 - Linux OS
     - Ubuntu 22.04
 - Python 
