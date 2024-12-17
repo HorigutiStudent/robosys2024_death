@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Copyright (c) 2024 Horiguchi Masahumi
+# Released under the MIT license
+# https://opensource.org/licenses/mit-license.php
 
 date_start=$(date +%Y/%m/%d-%H:%M:%S)
 #経過時間計算時使用するスタート時刻を取得
