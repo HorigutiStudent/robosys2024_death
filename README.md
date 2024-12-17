@@ -54,5 +54,5 @@ echo t | ./get_menues
   
 ## LICENSE
 © 2024 Horiguti Masahumi \
-このソフトウェアパッケージは，MITライセンスの下，再頒布および使用が許可される
-各ファイルはファイル内に明記されているライセンスに従う。 ライセンスが明記されていない場合は、MITライセンスに従う。 ライセンスの全文は[LICENSE](https://github.com/HorigutiStudent/robosys2024?tab=MIT-1-ov-file)から確認できる。
+このソフトウェアパッケージは，MITライセンスの下，再頒布および使用が許可される. \
+各ファイルはファイル内に明記されているライセンスに従う. ライセンスが明記されていない場合は、MITライセンスに従う. ライセンスの全文は[LICENSE](https://github.com/HorigutiStudent/robosys2024?tab=MIT-1-ov-file)から確認できる.
