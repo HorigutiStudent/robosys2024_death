@@ -9,8 +9,8 @@
     - Ubuntu 22.04
 - Python 
     - version: 3.7 ~ 3.10
-## Requirements
-- Pillow
+## Installation
+### Pillow
   apt でインストール(推奨)
   ```sh
   apt install python3-pil  python3-pil.imagetk
