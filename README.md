@@ -10,15 +10,19 @@
 - Python 
     - version: 3.7 ~ 3.10
 ## Installation
-### Pillow
-  apt でインストール(推奨)
-  ```sh
-  apt install python3-pil  python3-pil.imagetk
-  ```
-  pipでインストール(テスト済みでないため非推奨)
-  ```sh
-  pip3 install PIL
-  ```
+```sh
+#コマンドのダウンロード
+git clone https://github.com/HorigutiStudent/robosys2024.git
+
+#PIL(Pillow)のインストール
+#apt でインストール(推奨)
+apt installl python3-pil python3-pil.imagetk
+
+#pipでインストール(テスト済みでないため非推奨)
+pip install PIL
+```
+## Usage
+
   
 ## LICENSE
 - このソフトウェアパッケージは，MITライセンスの下，再頒布および使用が許可されます．
