@@ -42,7 +42,7 @@ echo "場所" | ./get_menues
 "場所"には次の候補のうちいずれかを入力.
 - sで始まり1で終わる -> 新習志野校舎1階のメニュー
 - sで始まり2で終わる -> 新習志野校舎2階のメニュー
-- tで始まる         -> 津田沼公社のメニュー
+- tで始まる         -> 津田沼校舎のメニュー
 #### Examples
 ```sh
 #新習志野校舎1階のメニューを手に入れる
@@ -55,6 +55,8 @@ echo t | ./get_menues  #津田沼学食のメニューが表示される
 ```
   
 ## LICENSE
-© 2024 Horiguti Masahumi \
 このソフトウェアパッケージは，MITライセンスの下，再頒布および使用が許可される. \
 各ファイルはファイル内に明記されているライセンスに従う. ライセンスが明記されていない場合は、MITライセンスに従う. ライセンスの全文は[LICENSE](https://github.com/HorigutiStudent/robosys2024?tab=MIT-1-ov-file)から確認できる.
+
+## Copyright
+© 2024 Horiguti Masahumi 
