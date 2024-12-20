@@ -23,7 +23,7 @@ git clone https://github.com/HorigutiStudent/robosys2024.git
 
 #PIL(Pillow)のインストール
 #apt でインストール(推奨)
-apt installl python3-pil python3-pil.imagetk
+apt install python3-pil python3-pil.imagetk
 
 #pipでインストール(テスト済みでないため非推奨)
 pip install PIL
@@ -36,7 +36,7 @@ apt install xvfb
 ## Usage
 コマンドは次のように使用する.
 ```
-cd 
+cd robosys2024
 echo "場所" | ./get_menues
 ```
 "場所"には次の候補のうちいずれかを入力.
@@ -46,11 +46,12 @@ echo "場所" | ./get_menues
 #### Examples
 ```sh
 #新習志野校舎1階のメニューを手に入れる
-echo s1 | ./get_menues
+echo s1 | ./get_menues  #新習志野学食1階のメニューが表示される
+
 #新習志野校舎2階のメニューを手に入れる
-echo s2 | ./get_menues
+echo s2 | ./get_menues  #新習志野学食2階のメニューが表示される
 #津田沼校舎のメニューを手に入れる
-echo t | ./get_menues
+echo t | ./get_menues  #津田沼学食のメニューが表示される
 ```
   
 ## LICENSE

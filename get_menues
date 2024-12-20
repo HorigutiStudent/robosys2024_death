@@ -28,6 +28,3 @@ if __name__ == "__main__":
         with open(file_name,"wb") as p:
             p.write(image)
             view_picture.done()
-            print(0)#疑似終了ステータス
-    else:
-        print(1)#正しく画像が取得できないときは1を返すようにする
