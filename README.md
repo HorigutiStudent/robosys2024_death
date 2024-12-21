@@ -50,8 +50,7 @@ echo t | ./get_menues  #下のWindowが表示される
 ```
 ![メニュー例](examples/tudanuma_ex.png)
 ## LICENSE
-- このソフトウェアパッケージは，MITライセンスの下，再頒布および使用が許可される. \
-- 各ファイルはファイル内に明記されているライセンスに従う. ライセンスが明記されていない場合は、MITライセンスに従う. ライセンスの全文は[LICENSE](https://github.com/HorigutiStudent/robosys2024?tab=MIT-1-ov-file)から確認できる.
+- このソフトウェアパッケージは，MITライセンスの下，再頒布および使用が許可される. \各ファイルはファイル内に明記されているライセンスに従う. ライセンスが明記されていない場合は、MITライセンスに従う. ライセンスの全文は[LICENSE](https://github.com/HorigutiStudent/robosys2024?tab=MIT-1-ov-file)から確認できる.
 
 ## Copyright
 - © 2024 Horiguti Masahumi 
