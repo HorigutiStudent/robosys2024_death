@@ -54,4 +54,4 @@ echo t | ./get_menues  #下のWindowが表示される
 - 各ファイルはファイル内に明記されているライセンスに従う. ライセンスが明記されていない場合は、MITライセンスに従う. ライセンスの全文は[LICENSE](https://github.com/HorigutiStudent/robosys2024?tab=MIT-1-ov-file)から確認できる.
 
 ## Copyright
-© 2024 Horiguti Masahumi 
+- © 2024 Horiguti Masahumi 
