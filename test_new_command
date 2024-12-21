@@ -25,7 +25,7 @@ out=$( test_script s2 )
 out=$( test_script t )
 [ "$?" = 124 ] || ng "$LINENO" 
 
-
+rm -r pictures
 ##想定外の入力でエラーを吐くか確認する
 # 全く想定していない入力
 out=$( test_script aa )
