@@ -9,6 +9,7 @@ from new_command.get_datetime import GetDateTime
 from new_command.get_place_info import GetPlaceInfo
 from new_command.view_picture import ViewPicture
 
+
 if __name__ == "__main__":
     getdatetime = GetDateTime()
     getplaceinfo = GetPlaceInfo()
