@@ -14,8 +14,8 @@ test_script () {
 res=0
 
 #picturesに書き込み権限を付与
-ls
-chmod -R 777 /pictures
+pwd
+chmod -R 777 /
 #予定通りの入力で正しく動作するか確認する
 #新習志野1階メニュー
 out=$( test_script s1 )
