@@ -26,7 +26,7 @@ git clone https://github.com/HorigutiStudent/robosys2024.git
 apt install python3-pil python3-pil.imagetk
 
 #pipでインストール(テスト済みでないため非推奨)
-pip install PIL
+pip install Pillow
 ```
 テストを実行したい場合は加えてインストール
 ```sh
@@ -45,15 +45,10 @@ echo "場所" | ./get_menues
 - tで始まる         -> 津田沼校舎のメニュー
 #### Examples
 ```sh
-#新習志野校舎1階のメニューを手に入れる
-echo s1 | ./get_menues  #新習志野学食1階のメニューが表示される
-
-#新習志野校舎2階のメニューを手に入れる
-echo s2 | ./get_menues  #新習志野学食2階のメニューが表示される
 #津田沼校舎のメニューを手に入れる
 echo t | ./get_menues  #津田沼学食のメニューが表示される
 ```
-  
+![メニュー例](pictures/menue.jpg)
 ## LICENSE
 このソフトウェアパッケージは，MITライセンスの下，再頒布および使用が許可される. \
 各ファイルはファイル内に明記されているライセンスに従う. ライセンスが明記されていない場合は、MITライセンスに従う. ライセンスの全文は[LICENSE](https://github.com/HorigutiStudent/robosys2024?tab=MIT-1-ov-file)から確認できる.
