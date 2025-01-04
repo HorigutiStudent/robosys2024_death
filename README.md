@@ -1,7 +1,7 @@
 # robosys2024
 
 # get_menues コマンド
-![test](https://github.com/HorigutiStudent/robosys2024/actions/workflows/test.yml/badge.svg)
+![test](https://github.com/HorigutiStudent/robosys2024_death/actions/workflows/test.yml/badge.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) \
 <img src="https://img.shields.io/badge/-Python-F9DC3E.svg?logo=python&style=flat"> \
  今週の学食メニュー表を入手するコマンド.
